@@ -18,7 +18,7 @@ verifyCats(jane, julia);
 console.log("---------------");
 verifyCats(jane2, julia2);*/
 
-const arr = [444, -55, 23, 114, -86, -772, 66, 263, 455, 49];
+/*const arr = [444, -55, 23, 114, -86, -772, 66, 263, 455, 49];
 
 const arr2 = arr.map((v) => v * 2);
 
@@ -28,4 +28,19 @@ const arr3 = arr.map((v, i) => {
 
 console.log(arr);
 console.log(arr2);
-console.log(arr3);
+console.log(arr3);*/
+
+const arr = [-774, -55, 23, 114, -86, -772, -773, 2635, 455, 49];
+
+const arr2 = arr.filter((v) => v > 0);
+console.log(arr2);
+
+//console.log(arr.reduce((r, v) => r + v, 1000));
+//console.log(arr.filter((v) => v > 0).reduce((r, v) => r + v));
+//console.log(arr.filter((v) => v < 0).reduce((r, v) => r + v));
+
+//arr4 = arr.reduce((r, v) => r.push(v), [])
+
+const min = arr.reduce((r, v) => (r > v ? v : r));
+
+console.log(min);
