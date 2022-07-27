@@ -98,7 +98,7 @@ console.log(arr);*/
 console.log(arr.flat());*/
 
 //lesson 6
-const arr = accounts
+/*const arr = accounts
     .map((v) => v.transactions)
     .flat()
     .reduce((r, v) => r + v, 0);
@@ -106,4 +106,12 @@ const arr = accounts
 const arr2 = accounts.flatMap((v) => v.transactions).reduce((r, v) => r + v, 0);
 
 console.log(arr);
-console.log(arr2);
+console.log(arr2);*/
+
+//lesson 7
+const arr = ["Andrey", "Nina", "Valera", "Lena", "Masha", "Petya"];
+console.log(arr.sort());
+
+const arr2 = [444, -55, 23, 114, -86, -772, 66, 263, 455, 49];
+const arr3 = arr2.sort((x, y) => (x > y ? 0 : -1));
+console.log(arr3);
