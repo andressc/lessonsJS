@@ -28,19 +28,24 @@ const arr3 = arr.map((v, i) => {
 
 console.log(arr);
 console.log(arr2);
-console.log(arr3);*/
+console.log(arr3);
 
 const arr = [-774, -55, 23, 114, -86, -772, -773, 2635, 455, 49];
 
 const arr2 = arr.filter((v) => v > 0);
 console.log(arr2);
 
-//console.log(arr.reduce((r, v) => r + v, 1000));
-//console.log(arr.filter((v) => v > 0).reduce((r, v) => r + v));
-//console.log(arr.filter((v) => v < 0).reduce((r, v) => r + v));
-
 //arr4 = arr.reduce((r, v) => r.push(v), [])
 
 const min = arr.reduce((r, v) => (r > v ? v : r));
 
-console.log(min);
+console.log(min);*/
+
+const getAverageHumanAge = (cats) => {
+    const all = cats.map((v) => (v <= 2 ? v * 10 : v * 7)).filter((v) => v >= 18);
+    console.log(all.reduce((r, v) => r + v, 0) / all.length);
+};
+
+getAverageHumanAge([7, 3, 2, 4, 1, 15, 8, 1, 9, 2]);
+getAverageHumanAge([1, 16, 12, 4, 5, 1, 3, 11, 7, 2]);
+
